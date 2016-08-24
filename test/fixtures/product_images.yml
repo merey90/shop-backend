@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_variety: one
+  url: MyText
+  title: MyString
+  description: MyText
+
+two:
+  product_variety: two
+  url: MyText
+  title: MyString
+  description: MyText

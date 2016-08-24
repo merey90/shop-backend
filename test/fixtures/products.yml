@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  serial: MyText
+  title: MyString
+  description: MyText
+  price: 1
+  sale: 1
+  gender: 
+
+two:
+  serial: MyText
+  title: MyString
+  description: MyText
+  price: 1
+  sale: 1
+  gender: 

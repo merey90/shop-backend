@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product: one
+  status: 
+  cost: 1
+  tariff: 1
+  sold_price: 1
+  sold_tariff: 
+
+two:
+  product: two
+  status: 
+  cost: 1
+  tariff: 1
+  sold_price: 1
+  sold_tariff: 
