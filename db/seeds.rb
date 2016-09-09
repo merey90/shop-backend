@@ -54,7 +54,7 @@ sizes = ProductSize.create([
             )
         5.times do
             variety.product_images.create(
-                url: Faker::Placeholdit.image("50x50", 'jpg'),
+                url: Faker::Placeholdit.image("500x500", 'jpg'),
                 title: Faker::Pokemon.name,
                 description: Faker::Pokemon.location
                 )

@@ -7,6 +7,12 @@ class ProductsController < ApplicationController
 
     render json: @products
   end
+  
+  #Get /products/carousels
+  def carousels
+    @products = Product.first(3)
+    render json: @products, :include => [:product_varieties => {:include => [:product_color, :product_size, :product_images]}]
+  end
 
   # GET /products/1
   def show

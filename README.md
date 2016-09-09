@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+#to start server on c9.io
+rails s -b $IP -p $PORT
