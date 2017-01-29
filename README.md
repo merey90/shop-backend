@@ -1,27 +1,14 @@
-# README
+This is backend for Shop project based on RubyOnRails 5 API mode;
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I'm using gem 'devise_token_auth' for backend
+//instructions at https://github.com/lynndylanhurley/devise_token_auth
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-#to start server on c9.io
-rails s -b $IP -p $PORT
+I'm using mailcatcher as mail smtp server at development.
+//https://mailcatcher.me/
+//How:
+//  Don't put mailcatcher into your Gemfile. It will conflict with your applications gems at some point.
+//  ->$ gem install mailcatcher
+//  ->$ mailcatcher
+//  Go to http://localhost:1080/
+//  Send mail through smtp://localhost:1025
+//  Use mailcatcher --help to see the command line options.
