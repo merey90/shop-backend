@@ -1,5 +1,9 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :update, :destroy]
+  before_action :authenticate_user!, only: [:create, :update, :destroy]
+  before_action only: [:create, :update, :destroy] do
+      is_owner(current_user)
+  end
 
   # GET /products
   def index
@@ -7,7 +11,7 @@ class ProductsController < ApplicationController
 
     render json: @products
   end
-  
+
   #Get /products/carousels
   def carousels
     @products = Product.first(3)
