@@ -12,7 +12,6 @@ Rails.application.routes.draw do
     resources :products do
         collection do
             get :carousels
-            get :user
         end
 
         resources :product_varieties do
