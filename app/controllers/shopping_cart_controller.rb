@@ -2,8 +2,8 @@ class ShoppingCartController < ApplicationController
 
   # GET /shopping-carts
   def index
-    @user_shopping_cart = current_user.product_varieties
-    render json: @user_shopping_cart
+    @user_shopping_carts = current_user.product_varieties
+    render json: @user_shopping_carts
   end
 
   # Post /shopping-carts
@@ -15,6 +15,12 @@ class ShoppingCartController < ApplicationController
     else
       render json: @product_variety.errors, status: :unprocessable_entity
     end
+  end
+
+  def remove
+    @product_variety = current_user.product_varieties.find(:id)
+    @product_variety.remove()
+    render json: @product_variety, status: :deleted, location: @product_variety
   end
 
   private
